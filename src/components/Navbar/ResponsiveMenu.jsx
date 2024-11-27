@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-
 import { MenuLinks } from "./Navbar";
+import logo from '../../assets/website/logo.png'
 
 const ResponsiveMenu = ({ showMenu }) => {
   console.log("showMenu", showMenu);
@@ -13,11 +13,8 @@ const ResponsiveMenu = ({ showMenu }) => {
     >
       <div className="card">
         <div className="flex items-center justify-start gap-3">
-          <FaUserCircle size={50} />
-          <div>
-            <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
-          </div>
+        <img src={logo} alt="Logo" className="w-20 h-auto" /> 
+          
         </div>
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">
@@ -33,7 +30,7 @@ const ResponsiveMenu = ({ showMenu }) => {
       </div>
       <div className="footer">
         <h1>
-          Made with ❤ by <a href="https://dilshad-ahmed.github.io/">Dilshad</a>{" "}
+         The IT Guys LLC
         </h1>
       </div>
     </div>
